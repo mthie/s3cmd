@@ -151,8 +151,8 @@ tests.clevercloud = {
 
 exports.hcloud = ({ region = "fsn1" }) => ({
     bucket_location: region,
-    host_base: `fsn1.your-objectstorage.com`,
-    host_bucket: `%(bucket)s.fsn1.your-objectstorage.com`,
+    host_base: `${region}.your-objectstorage.com`,
+    host_bucket: `%(bucket)s.${region}.your-objectstorage.com`,
     website_endpoint: "",
 });
 
